@@ -19,7 +19,7 @@
       var time;
       this.$element = element;
       this.options = options;
-      this.weekDays = ['sun', 'mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+      this.weekDays = ['Sat', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
       this.time = new Date();
       this.currentYear = this.time.getFullYear();
       this.currentMonth = this.time.getMonth();
@@ -352,7 +352,7 @@
       });
     };
     $.fn.responsiveCalendar.defaults = {
-      translateMonths: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+      translateMonths: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
       events: {},
       time: void 0,
       allRows: true,

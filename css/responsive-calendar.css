@@ -15,7 +15,6 @@
     cursor: pointer;
     background-image: none;
     border: 1px solid transparent;
-    border-radius: 0px 0px 14px 14px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -41,7 +40,7 @@
     white-space: nowrap;
     vertical-align: baseline;
     background-color: #999;
-    border-radius: 10px;
+    border-radius: 50%;
 }
 
 .responsive-calendar .pull-left {

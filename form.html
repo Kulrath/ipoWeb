@@ -1,7 +1,64 @@
-<html>
 
-<head><h1>Este es el formulario Faggot !!!</h1></head>
-    <body>
-        <img src="img/jissus.gif">
-    </body>
+
+<html>
+<head>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive-calendar.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    <script src="./js/konami.js">
+    </script>
+
+</head>
+<body>
+<div class="navbar">
+    <div class="navbar-header"></div>
+    <div class="navbar-container">
+        <ul>
+            <li><a class="active"> <i class="material-icons">home</i> </a></li>
+            <li><a href="#About" > <i class="material-icons">view_list</i></a></li>
+            <li><a href="#EventL"> Event List</a></li>
+        </ul>
+    </div>
+</div>
+
+<div id='container'>
+
+        <form class="contact_form" action="#" id="contact_form">
+            <div class="client-data">
+                <ul>
+                    <li>
+                        <h2>Contactos</h2>
+                        <span class="required_notification">* Datos Requeridos</span>
+                    </li>
+
+                    <li>
+                        <label for="name">Nombre :</label>
+                        <input type="text" placeholder="Cliente uno" required />
+                    </li>
+                    <li>
+                        <label for="phone">Telefono :</label>
+                        <input type="number" placeholder="+34 666666666" required />
+                    </li>
+
+                </ul>
+            </div>
+            <div class="event-data">
+                <ul>
+                <li>
+                    <input type="date" name="fecha" min="2016-12-15">
+                </li>
+
+                <li>
+                    <label for="name">Ubicación :</label>
+                    <input type="text" placeholder="Ubicación uno" required />
+                </li>
+                </ul>
+            </div>
+        </form>
+
+
+</div>
+</body>
 </html>

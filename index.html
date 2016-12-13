@@ -2,67 +2,72 @@
 
     <html>
         <head>
-             <LINK href="css/style.css" rel="stylesheet" type="text/css">
-             <LINK href="css/responsive-calendar.css" rel="stylesheet" type="text/css">
-             <LINK href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+             <link href="css/style.css" rel="stylesheet" type="text/css">
+             <link href="css/responsive-calendar.css" rel="stylesheet" type="text/css">
+             <link href='http://fonts.googleapis.com/css?family=Economica' rel='stylesheet' type='text/css'>
+             <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+                  rel="stylesheet">
              <script src="./js/konami.js">
                  </script>
             
         </head>
         <body>
-            <div id='container'>
-                <div id='nav_upper' class="nav">
-                    <nav>
-                        <ul>
-                            <li><a class="active"> Home </a></li>
-                            <li><a href="#About" > About</a></li>
-                            <li><a href="#EventL"> Event List</a></li>
-                        </ul>
-                    </nav>
-                
+            <div class="navbar">
+                <div class="navbar-header"></div>
+                <div class="navbar-container">
+                    <ul>
+                        <li><a class="active"> <i class="material-icons">home</i> </a></li>
+                        <li><a href="#About" > <i class="material-icons">view_list</i></a></li>
+                        <li><a href="#EventL"> Event List</a></li>
+                    </ul>
                 </div>
+            </div>
+
+            <div id='container'>
                 <div id='calendario'>
                     <div id="cal" class="responsive-calendar">
-                    <div class="controls">
-                        <a class="pull-left" data-go="prev"><div class="btn btn-primary" id="prev">Prev</div></a>
-                        <div class="btn btn-primary" id="data"><h4><span data-head-year></span> <span data-head-month></span></h4></div>
-                        <a class="pull-right" data-go="next"><div class="btn btn-primary" id="next">Next</div></a>
-                    </div><hr/>
-                    <div class="day-headers">
-                      <div class="day header">Mon</div>
-                      <div class="day header">Tue</div>
-                      <div class="day header">Wed</div>
-                      <div class="day header">Thu</div>
-                      <div class="day header">Fri</div>
-                      <div class="day header">Sat</div>
-                      <div class="day header">Sun</div>
-                    </div>
-                    <div class="days" data-group="days">
+                        <div class="controls">
+                            <a class="pull-left" data-go="prev"><div class="btn btn-primary" id="prev"><i class="material-icons">navigate_before</i></div></a>
+                            <div class="btn btn-primary" id="data"><h4><span data-head-year></span> <span data-head-month></span></h4></div>
+                            <a class="pull-right" data-go="next"><div class="btn btn-primary" id="next"><i class="material-icons">navigate_next</i></div></a>
+                        </div><hr/>
+                        <div class="day-headers">
+                            <div class="day header">Lunes</div>
+                            <div class="day header">Martes</div>
+                            <div class="day header">Miércoles</div>
+                            <div class="day header">Jueves</div>
+                            <div class="day header">Viernes</div>
+                            <div class="day header">Sábado</div>
+                            <div class="day header">Domingo</div>
+                        </div>
+                        <div class="days" data-group="days">
 
+                        </div>
                     </div>
+                    <!-- Responsive calendar - END -->
                 </div>
-                <!-- Responsive calendar - END -->
-                </div>
-                <a href="./form.html"><div id='evt_btn'>Crear Evento</div></a>
+
+                <a href="./form.html" class="btn-std">Crear Evento</a>
+
+
                 <script src="./js/jquery.js"></script>
-                
+
                 <script src="./js/bootstrap.min.js"></script>
                 <script src="./js/responsive-calendar.js"></script>
                 <script type="text/javascript">
                     var easter_egg = new Konami('https://github.com/chebasic/ipoWeb');
-                    
-                  $(document).ready(function () {
-                    $(".responsive-calendar").responsiveCalendar({
-                      time: '2016-12',
-                      events: {
-                        "2016-12-30": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
-                        "2016-12-26": {"number": 1, "url": "http://PornHub.com"}, 
-                        "2016-12-03":{"number": 1}, 
-                        "2016-12-12": {}}
-                    });
-                  });
-                </script>
 
+                    $(document).ready(function () {
+                        $(".responsive-calendar").responsiveCalendar({
+                            time: '2016-12',
+                            events: {
+                                "2016-12-30": {"number": 5, "url": "http://w3widgets.com/responsive-slider"},
+                                "2016-12-26": {"number": 1, "url": "http://PornHub.com"},
+                                "2016-12-03":{"number": 1},
+                                "2016-12-12": {}}
+                        });
+                    });
+                </script>
             </div>
         </body>
     </html>
