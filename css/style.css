@@ -1,0 +1,86 @@
+body{
+    background-color: whitesmoke;
+    
+}
+
+#container{
+    background-color: deeppink;
+    height: 85%;
+    width: 90%;
+    
+    margin: 10px auto;
+    margin-top: -8px;
+    position: relative;
+}
+
+#container a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#nav_upper{
+    background-color: dimgray;
+    height: 35px;
+    width: 270px;
+    
+    margin: 10px auto;
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+ 
+}
+
+.nav a:hover:not(.active){
+    background-color: lightsteelblue;
+}
+
+.nav .active{
+    background-color: chartreuse;
+}
+
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav li{
+    float: left;
+}
+.nav a{
+    display: block;
+    padding: 8px;
+}
+
+#nav_upper nav a{
+    color:azure;
+    text-decoration: none;
+}
+
+#calendario{
+    background-color: white;
+    margin-top: 60px;
+    height: auto;
+    width:  700px;
+    margin: 10px auto;
+    position: relative;
+}
+
+#evt_btn{
+    
+    text-align: center;
+    vertical-align: middle;
+    line-height: 50px; 
+    
+    cursor: pointer;
+    
+    background-color: dimgrey;
+    color:azure;
+    
+    border-radius: 4px;
+    height: 50px;
+    width: 114px;
+    position: relative;
+    margin-top: 600px;
+    margin: 10px auto;
+}
+
